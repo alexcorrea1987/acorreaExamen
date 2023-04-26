@@ -10,7 +10,7 @@ namespace acorreaExamen
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new login());
         }
 
         protected override void OnStart()

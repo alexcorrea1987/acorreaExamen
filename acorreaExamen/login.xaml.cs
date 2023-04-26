@@ -16,5 +16,24 @@ namespace acorreaExamen
         {
             InitializeComponent();
         }
+
+        private void btnIniciar_Clicked(object sender, EventArgs e)
+        {
+           string usuario = txtUsuario.Text;
+           string contraseña = txtContraseña.Text;
+
+            if (usuario == "estudiante2023" && contraseña == "uisrael2023")
+            {
+                Navigation.PushAsync(new registro());
+            }
+            else
+            {
+                DisplayAlert("ALERTA", "usuario/contraseña incorrectos", "Cerrar");
+                txtUsuario.Text = "";
+                txtContraseña.Text = "";
+            }
+        }
+
+        
     }
 }

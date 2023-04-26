@@ -4,9 +4,25 @@
              x:Class="acorreaExamen.login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="LOGIN" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2020/05/logo-UISRAEL.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="USUARIO" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="CONTRASEÑA" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtContraseña" Placeholder="CONTRASEÑA" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+                <Button x:Name="btnIniciar" Text="INICIAR" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"/>
+                
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

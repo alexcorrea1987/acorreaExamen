@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="acorreaExamen.registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="USUARIO: estudiante2023" HorizontalOptions="Start"/>
+                <Entry x:Name="txtNombre" Placeholder="Ingresa tu nombre"/>
+                <Entry x:Name="txtMontoInicial" Placeholder="Ingresa Monto Inicial" Keyboard="Numeric"/>
+                <Entry x:Name="txtCuotaUno" Placeholder="Cuota 1" IsReadOnly="True"/>
+                <Entry x:Name="txtCuotaDos" Placeholder="Cuota 2" IsReadOnly="True"/>
+                <Entry x:Name="txtCuotaTres" Placeholder="Cuota 3" IsReadOnly="True"/>
+                <Entry x:Name="txtPagoTotal" Placeholder="Pago Total" IsReadOnly="True"/>
+                <Entry x:Name="txtMensaje"/>
+                <Button x:Name="btnCalcular" Text="CALCULAR" Clicked="btnCalcular_Clicked"/>
+                <Button x:Name="btnLimpiar" Text="Limpiar" Clicked="btnLimpiar_Clicked"/>
+                <Button x:Name="btnRegistar" Text="REGISTRAR" Clicked="btnRegistar_Clicked"/>
+                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

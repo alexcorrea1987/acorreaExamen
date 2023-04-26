@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="acorreaExamen.resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="USUARIO: estudiante2023" HorizontalOptions="Start"/>
+            <Label Text="RESUMEN" FontSize="24" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txtMontoInicial" FontSize="20"/>
+            <Label x:Name="txtCuotaUno" FontSize="20"/>
+            <Label x:Name="txtCuotaDos" FontSize="20"/>
+            <Label x:Name="txtCuotaTres" FontSize="20"/>
+            <Label x:Name="txtPagoTotal" FontSize="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
