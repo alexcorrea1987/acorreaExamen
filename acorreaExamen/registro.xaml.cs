@@ -46,7 +46,7 @@ namespace acorreaExamen
 
         private void btnRegistar_Clicked(object sender, EventArgs e)
         {
-
+            //Navigation.PushAsync(new resumen(txtCuotaUno, txtCuotaDos, txtCuotaTres, txtPagoTotal));
         }
     }
 }
